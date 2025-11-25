@@ -106,6 +106,23 @@ static void print_user_property(mqtt5_user_property_handle_t user_property)
     }
 }
 
+// Loop Posting to the MQTT Broker with following function
+void mqtt_publish_loop(void *param)
+{
+    esp_mqtt_client_handle_t client = (esp_mqtt_client_handle_t)param;
+
+    while (1) {
+        const char *json = "{\"temp\":22.3,\"humidity\":48.0,\"pressure\":1012.8}";
+
+        // 0,1,0 eventually change to 0,0,0
+        esp_mqtt_client_publish(client, "/kitchen/sensor", json, 0, 1, 0);
+
+        ESP_LOGI(TAG, "Repeated MQTT publish");
+
+        vTaskDelay(pdMS_TO_TICKS(1000));  // every 1 seconds -- Req 
+    }
+
+}
 /*
  * @brief Event handler registered to receive MQTT events
  *
@@ -162,6 +179,10 @@ static void mqtt5_event_handler(void *handler_args, esp_event_base_t base, int32
         esp_mqtt5_client_delete_user_property(unsubscribe_property.user_property);
         unsubscribe_property.user_property = NULL;
         */
+       
+        // Create new free RTOS task to run mqtt publish loop continuosly in background
+        xTaskCreate(mqtt_publish_loop, "mqtt_publish_loop", 4096, client, 5, NULL);
+
         break;
     case MQTT_EVENT_DISCONNECTED:
         ESP_LOGI(TAG, "MQTT_EVENT_DISCONNECTED");
