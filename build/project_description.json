@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "mqtt5",
-    "project_version":    "9b3d65a-dirty",
+    "project_version":    "5be4959-dirty",
     "project_path":       "/Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5",
     "idf_path":           "/Users/kellycusick/esp/esp-idf",
     "build_dir":          "/Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/build",
