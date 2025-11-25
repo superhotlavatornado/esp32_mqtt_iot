@@ -1,0 +1,2 @@
+source /Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/build/bootloader/gdbinit/symbols
+source /Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/build/bootloader/gdbinit/connect
