@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "mqtt5",
-    "project_version":    "5be4959-dirty",
+    "project_version":    "cb1d8bf-dirty",
     "project_path":       "/Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5",
     "idf_path":           "/Users/kellycusick/esp/esp-idf",
     "build_dir":          "/Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/build",
@@ -891,11 +891,11 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "esp-tls", "esp_wifi", "esp_event", "nvs_flash", "espressif__mqtt", "protocol_examples_common" ],
+            "priv_reqs": [ "esp_netif", "esp_eth", "esp_event", "nvs_flash", "esp_wifi", "espressif__mqtt", "protocol_examples_common" ],
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__mqtt", "protocol_examples_common" ],
             "file": "/Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/build/esp-idf/main/libmain.a",
-            "sources": [ "/Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/main/app_main.c", "/Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/build/mosquitto.org.crt.S" ],
+            "sources": [ "/Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/main/app_main.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
@@ -2554,7 +2554,7 @@
             "dir": "/Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/main",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "esp-tls", "esp_wifi", "esp_event", "nvs_flash", "espressif__mqtt", "protocol_examples_common" ],
+            "priv_reqs": [ "esp_netif", "esp_eth", "esp_event", "nvs_flash", "esp_wifi", "espressif__mqtt", "protocol_examples_common" ],
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__mqtt", "protocol_examples_common" ],
             "include_dirs": [ "." ]

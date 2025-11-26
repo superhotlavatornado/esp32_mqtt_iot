@@ -16,7 +16,6 @@ if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   "flasher_args.json.in"
   "ldgen_libraries"
   "ldgen_libraries.in"
-  "mosquitto.org.crt.S"
   "mqtt5.bin"
   "mqtt5.map"
   "project_elf_src_esp32.c"

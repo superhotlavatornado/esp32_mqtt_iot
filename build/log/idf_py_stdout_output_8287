@@ -1,0 +1,67 @@
+Command: cmake -G Ninja -B /Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/Users/kellycusick/.espressif/python_env/idf6.1_py3.12_env/bin/python -DESP_PLATFORM=1 -DSDKCONFIG='/Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/sdkconfig' -DCCACHE_ENABLE=False /Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5
+-- Component directory /Users/kellycusick/esp/esp-idf/components/mqtt does not contain a CMakeLists.txt file. No component will be added
+-- Minimal build - ON
+-- Building ESP-IDF components for target esp32
+NOTICE: Manifest files have changed, solving dependencies.
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+NOTICE: Using component placed at /Users/kellycusick/esp/esp-idf/examples/common_components/protocol_examples_common for dependency "protocol_examples_common", specified in /Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/main/idf_component.yml
+...NOTICE: Skipping optional dependency: espressif/ch390
+NOTICE: Skipping optional dependency: espressif/dm9051
+NOTICE: Skipping optional dependency: espressif/dp83848
+NOTICE: Skipping optional dependency: espressif/enc28j60
+NOTICE: Skipping optional dependency: espressif/ip101
+NOTICE: Skipping optional dependency: espressif/ksz80xx
+NOTICE: Skipping optional dependency: espressif/ksz8851snl
+NOTICE: Skipping optional dependency: espressif/lan865x
+NOTICE: Skipping optional dependency: espressif/lan867x
+NOTICE: Skipping optional dependency: espressif/lan87xx
+NOTICE: Skipping optional dependency: espressif/rtl8201
+NOTICE: Skipping optional dependency: espressif/w5500
+...NOTICE: Updating lock file at /Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/dependencies.lock
+NOTICE: Processing 4 dependencies:
+NOTICE: [1/4] espressif/ethernet_init (1.2.0)
+NOTICE: [2/4] espressif/mqtt (1.0.0)
+NOTICE: [3/4] protocol_examples_common (*) (/Users/kellycusick/esp/esp-idf/examples/common_components/protocol_examples_common)
+NOTICE: [4/4] idf (6.1.0)
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5;esp32c61 SoCs
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+NOTICE: Skipping optional dependency: espressif/ch390
+NOTICE: Skipping optional dependency: espressif/dm9051
+NOTICE: Skipping optional dependency: espressif/dp83848
+NOTICE: Skipping optional dependency: espressif/enc28j60
+NOTICE: Skipping optional dependency: espressif/ip101
+NOTICE: Skipping optional dependency: espressif/ksz80xx
+NOTICE: Skipping optional dependency: espressif/ksz8851snl
+NOTICE: Skipping optional dependency: espressif/lan865x
+NOTICE: Skipping optional dependency: espressif/lan867x
+NOTICE: Skipping optional dependency: espressif/lan87xx
+NOTICE: Skipping optional dependency: espressif/rtl8201
+NOTICE: Skipping optional dependency: espressif/w5500
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file /Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/sdkconfig
+Loading defaults file /Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/sdkconfig.defaults...
+-- Compiler supported targets: xtensa-esp-elf
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- App "mqtt5" version: cb1d8bf-dirty
+-- USING O3
+-- Adding linker script /Users/kellycusick/esp/esp-idf/components/esp_system/ld/esp32/memory.ld.in
+--   -> Preprocessing .in script: /Users/kellycusick/esp/esp-idf/components/esp_system/ld/esp32/memory.ld.in
+-- Adding linker script /Users/kellycusick/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+--   -> Preprocessing .in script: /Users/kellycusick/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+--   -> Applying ldgen processing: /Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /Users/kellycusick/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /Users/kellycusick/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /Users/kellycusick/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /Users/kellycusick/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /Users/kellycusick/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /Users/kellycusick/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Adding linker script /Users/kellycusick/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-reent-funcs.ld
+-- Adding linker script /Users/kellycusick/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_update bootloader bootloader_support console cxx efuse esp-tls esp_app_format esp_blockdev esp_bootloader_format esp_coex esp_common esp_driver_gpio esp_driver_spi esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_hal_dma esp_hal_emac esp_hal_i2c esp_hal_i2s esp_hal_jpeg esp_hal_lcd esp_hal_mcpwm esp_hal_mspi esp_hal_parlio esp_hal_pcnt esp_hal_timg esp_hal_usb esp_hal_wdt esp_hw_support esp_libc esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_ringbuf esp_rom esp_security esp_stdio esp_system esp_timer esp_usb_cdc_rom_console esp_wifi espressif__ethernet_init espressif__mqtt esptool_py freertos hal heap http_parser ieee802154 log lwip main mbedtls nvs_flash nvs_sec_provider openthread partition_table protocol_examples_common pthread soc spi_flash tcp_transport vfs wpa_supplicant xtensa
+-- Component paths: /Users/kellycusick/esp/esp-idf/components/app_update /Users/kellycusick/esp/esp-idf/components/bootloader /Users/kellycusick/esp/esp-idf/components/bootloader_support /Users/kellycusick/esp/esp-idf/components/console /Users/kellycusick/esp/esp-idf/components/cxx /Users/kellycusick/esp/esp-idf/components/efuse /Users/kellycusick/esp/esp-idf/components/esp-tls /Users/kellycusick/esp/esp-idf/components/esp_app_format /Users/kellycusick/esp/esp-idf/components/esp_blockdev /Users/kellycusick/esp/esp-idf/components/esp_bootloader_format /Users/kellycusick/esp/esp-idf/components/esp_coex /Users/kellycusick/esp/esp-idf/components/esp_common /Users/kellycusick/esp/esp-idf/components/esp_driver_gpio /Users/kellycusick/esp/esp-idf/components/esp_driver_spi /Users/kellycusick/esp/esp-idf/components/esp_driver_uart /Users/kellycusick/esp/esp-idf/components/esp_driver_usb_serial_jtag /Users/kellycusick/esp/esp-idf/components/esp_eth /Users/kellycusick/esp/esp-idf/components/esp_event /Users/kellycusick/esp/esp-idf/components/esp_hal_dma /Users/kellycusick/esp/esp-idf/components/esp_hal_emac /Users/kellycusick/esp/esp-idf/components/esp_hal_i2c /Users/kellycusick/esp/esp-idf/components/esp_hal_i2s /Users/kellycusick/esp/esp-idf/components/esp_hal_jpeg /Users/kellycusick/esp/esp-idf/components/esp_hal_lcd /Users/kellycusick/esp/esp-idf/components/esp_hal_mcpwm /Users/kellycusick/esp/esp-idf/components/esp_hal_mspi /Users/kellycusick/esp/esp-idf/components/esp_hal_parlio /Users/kellycusick/esp/esp-idf/components/esp_hal_pcnt /Users/kellycusick/esp/esp-idf/components/esp_hal_timg /Users/kellycusick/esp/esp-idf/components/esp_hal_usb /Users/kellycusick/esp/esp-idf/components/esp_hal_wdt /Users/kellycusick/esp/esp-idf/components/esp_hw_support /Users/kellycusick/esp/esp-idf/components/esp_libc /Users/kellycusick/esp/esp-idf/components/esp_mm /Users/kellycusick/esp/esp-idf/components/esp_netif /Users/kellycusick/esp/esp-idf/components/esp_netif_stack /Users/kellycusick/esp/esp-idf/components/esp_partition /Users/kellycusick/esp/esp-idf/components/esp_phy /Users/kellycusick/esp/esp-idf/components/esp_pm /Users/kellycusick/esp/esp-idf/components/esp_ringbuf /Users/kellycusick/esp/esp-idf/components/esp_rom /Users/kellycusick/esp/esp-idf/components/esp_security /Users/kellycusick/esp/esp-idf/components/esp_stdio /Users/kellycusick/esp/esp-idf/components/esp_system /Users/kellycusick/esp/esp-idf/components/esp_timer /Users/kellycusick/esp/esp-idf/components/esp_usb_cdc_rom_console /Users/kellycusick/esp/esp-idf/components/esp_wifi /Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/managed_components/espressif__ethernet_init /Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/managed_components/espressif__mqtt /Users/kellycusick/esp/esp-idf/components/esptool_py /Users/kellycusick/esp/esp-idf/components/freertos /Users/kellycusick/esp/esp-idf/components/hal /Users/kellycusick/esp/esp-idf/components/heap /Users/kellycusick/esp/esp-idf/components/http_parser /Users/kellycusick/esp/esp-idf/components/ieee802154 /Users/kellycusick/esp/esp-idf/components/log /Users/kellycusick/esp/esp-idf/components/lwip /Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/main /Users/kellycusick/esp/esp-idf/components/mbedtls /Users/kellycusick/esp/esp-idf/components/nvs_flash /Users/kellycusick/esp/esp-idf/components/nvs_sec_provider /Users/kellycusick/esp/esp-idf/components/openthread /Users/kellycusick/esp/esp-idf/components/partition_table /Users/kellycusick/esp/esp-idf/examples/common_components/protocol_examples_common /Users/kellycusick/esp/esp-idf/components/pthread /Users/kellycusick/esp/esp-idf/components/soc /Users/kellycusick/esp/esp-idf/components/spi_flash /Users/kellycusick/esp/esp-idf/components/tcp_transport /Users/kellycusick/esp/esp-idf/components/vfs /Users/kellycusick/esp/esp-idf/components/wpa_supplicant /Users/kellycusick/esp/esp-idf/components/xtensa
+-- Configuring done (8.7s)
+-- Generating done (0.3s)
+-- Build files have been written to: /Users/kellycusick/Documents/ESP32_Projects/MQTT_Nov_22/mqtt5/build

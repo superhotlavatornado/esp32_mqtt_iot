@@ -439,7 +439,7 @@ CONFIG_IDF_TARGET_ARCH="xtensa"
 # default:
 CONFIG_IDF_TARGET="esp32"
 # default:
-CONFIG_IDF_INIT_VERSION="6.1.0"
+CONFIG_IDF_INIT_VERSION="$IDF_INIT_VERSION"
 # default:
 CONFIG_IDF_TARGET_ESP32=y
 # default:
@@ -783,8 +783,8 @@ CONFIG_EXAMPLE_CONNECT_WIFI=y
 # CONFIG_EXAMPLE_WIFI_SSID_PWD_FROM_STDIN is not set
 # default:
 CONFIG_EXAMPLE_PROVIDE_WIFI_CONSOLE_CMD=y
-CONFIG_EXAMPLE_WIFI_SSID="nutwood"
-CONFIG_EXAMPLE_WIFI_PASSWORD="nutwood124"
+CONFIG_EXAMPLE_WIFI_SSID="Gulag-1g"
+CONFIG_EXAMPLE_WIFI_PASSWORD="DottedPaper100"
 # default:
 CONFIG_EXAMPLE_WIFI_CONN_MAX_RETRY=6
 # default:
@@ -921,18 +921,6 @@ CONFIG_COMPILER_CXX_GLIBCXX_CONSTEXPR_NO_CHANGE=y
 #
 
 #
-# !!! MINIMAL_BUILD is enabled !!!
-#
-
-#
-# Only common components and those transitively required by the main component are listed
-#
-
-#
-# If a component configuration is missing, please add it to the main component's requirements
-#
-
-#
 # Console Library
 #
 # default:
@@ -1046,8 +1034,7 @@ CONFIG_ETH_DMA_RX_BUFFER_NUM=10
 CONFIG_ETH_DMA_TX_BUFFER_NUM=10
 # default:
 # CONFIG_ETH_IRAM_OPTIMIZATION is not set
-# default:
-CONFIG_ETH_USE_SPI_ETHERNET=y
+# CONFIG_ETH_USE_SPI_ETHERNET is not set
 # default:
 # CONFIG_ETH_USE_OPENETH is not set
 # default:
